@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Container } from "../style/styles";
 import { styled } from "styled-components";
 import { motion } from "framer-motion";
-import { pageAnim, scrollAnim, useScroll, lineAnim, awardAnim } from "../animation";
+import { pageAnim, scrollAnim, useScroll, lineAnim } from "../animation";
 
 const MovieDetails = () => {
   const location = useLocation();

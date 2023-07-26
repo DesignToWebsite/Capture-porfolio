@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import { Container } from "../style/styles";
@@ -60,7 +59,6 @@ const List = styled.ul`
         }
         @media screen and (max-width:390px){
             font-size: 1rem;
-            background-color: red;
         }
     }
     a{

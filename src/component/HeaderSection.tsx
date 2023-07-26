@@ -3,11 +3,12 @@ import { Container } from "../style/styles"
 import home1 from "../img/home1.png"
 import Wave from "./Wave"
 import { motion } from "framer-motion"
-import { titleAnim, photoAnim, fade} from "../animation"
+import { titleAnim, photoAnim, fade,  useScroll, pageAnim} from "../animation"
 
 const HeaderSection = ()=>{
+    const [element, controls] = useScroll();
     return(
-        <Header>
+        <Header variants={pageAnim} ref={element} animate={controls} initial='hidden'>
             <Description>
                 <Hide>
                     <motion.h1 variants={titleAnim}>We work to make </motion.h1>
