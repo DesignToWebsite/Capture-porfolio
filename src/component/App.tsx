@@ -16,7 +16,7 @@ function App() {
             <Nav />
             <AnimatePresence mode="wait">
                 <Routes location={location} key={location.pathname}>
-                    <Route path="/" element={<AboutUs />} />
+                    <Route path="/Capture-porfolio" element={<AboutUs />} />
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/work" element={<OurWork />} />
                     <Route path="/contactUs" element={<ContactUs />} />
