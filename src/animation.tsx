@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
+import { useAnimation, Variants } from "framer-motion";
 
-export const pageAnim = {
+export const pageAnim: Variants = {
     hidden:{
         opacity:0,
         y:300,
@@ -24,7 +24,7 @@ export const pageAnim = {
     }
 }
 
-export const titleAnim = {
+export const titleAnim: Variants = {
     hidden : {
         y : 200,
     },
@@ -37,7 +37,7 @@ export const titleAnim = {
     }
 }
 
-export const photoAnim =  {
+export const photoAnim: Variants =  {
     hidden: {
         scale: 1.5,
         opacity:0,
@@ -49,7 +49,7 @@ export const photoAnim =  {
     }
 }
 
-export const fade = {
+export const fade: Variants = {
     hidden:{
         opacity:0,
     },
@@ -72,7 +72,7 @@ export const useScroll = ()=>{
     return [element, controls];
 }
 
-export const scrollAnim = {
+export const scrollAnim: Variants = {
     hidden: {
         opacity:0,
         scale: 1.2,
@@ -84,7 +84,7 @@ export const scrollAnim = {
     }
 }
 
-export const lineAnim = {
+export const lineAnim: Variants = {
     hidden:{
         width : '0%'
     },
@@ -95,7 +95,7 @@ export const lineAnim = {
 
 }
 
-export const slider = {
+export const slider: Variants = {
     hidden:{
         x: '-130%',
         skew : "45deg"
@@ -110,7 +110,7 @@ export const slider = {
     }
 }
 
-export const sliderContainer = {
+export const sliderContainer: Variants = {
     hidden:{
         opacity: 1
     },
@@ -123,7 +123,7 @@ export const sliderContainer = {
     
 }
 
-export const awardAnim = {
+export const awardAnim: Variants = {
     hidden : {
         opacity : 0,
         y: 100,
