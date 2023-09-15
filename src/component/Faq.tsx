@@ -4,11 +4,14 @@ import { faq } from "../data/faq";
 import { LayoutGroup, motion } from "framer-motion";
 import Toggle from "./Toggle";
 import { fade, scrollAnim, useScroll } from "../animation";
+import { useRef } from "react";
 
 const Faq = () =>{
     const [element, controls] = useScroll();
+
     return(
-        <FaqStyle variants={scrollAnim} ref={element} animate={controls} initial='hidden'>
+        <motion.div variants={scrollAnim} ref={element} animate={controls} initial='hidden'>
+        <FaqStyle>
             <h2>Any Questions?</h2>
             <h2 className="green">FAQ</h2>
             
@@ -24,6 +27,7 @@ const Faq = () =>{
             </LayoutGroup>
         
         </FaqStyle>
+        </motion.div>
     )
 };
 
